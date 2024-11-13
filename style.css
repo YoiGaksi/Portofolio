@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 10;
+    margin: 2rem 3rem;
+}
+.dot {
+    opacity: 0;
+    animation: fade 1s infinite;
+}
+
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+.dot:nth-child(4) { animation-delay: 0.6s; }
+
+
+@keyframes fade {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+.content {
+    height: 100vh;
+    opacity: 0;
+    font-size: 2em;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.home{
+    margin-top: 5rem;
+}
+.home p{
+    margin: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.acontact{
+    margin: 3rem;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+.acontact::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(0%);
+}
+.acontact:hover::after {
+    width: 100%;  
+    transform: translateX(-0%);
+}
+section{
+    padding: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+section h2{
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+section .media{
+    padding: 2rem;
+    display: flex;   
+    gap: 2rem;
+}
+.media a{   
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: black;
+}
+.media a:hover{
+    font-weight: bold;
+}

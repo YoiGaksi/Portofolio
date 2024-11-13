@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>PORTOFOLIO</title>
+    <style>
+        .header h1{
+            display: flex;
+            align-items: center;
+            font-size: 2em
+        }
+        .content {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body> 
+    <div class="header">      
+        <h1>Muhammad Fairuz Atha</h1>
+    </div>
+    <div class="content" id="home">
+        <div class="home" >
+            <h1>About Me<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></h1>
+            <p>Halo! Saya adalah seorang profesional yang berdedikasi dalam Game Development. Saya memiliki pengalaman dalam berbagai proyek, dari Game 2D hingga Game Triple A.
+                Saya percaya bahwa setiap proyek memiliki cerita unik, dan saya senang berkontribusi untuk menciptakan hasil yang tidak hanya memenuhi ekspektasi, tapi juga membawa dampak positif.           
+                Jika Anda tertarik untuk bekerja sama atau memiliki ide yang ingin diwujudkan, jangan ragu untuk menghubungi saya!</p>
+            <a href="#contact" class="acontact">Contact...</a>
+        </div>
+    </div>
+    <div class="content" id="project">
+        <div class="container">
+            <h1>My Project</h1>
+        </div>
+    </div>   
+    <div class="content" id="contact">
+        <section class="contact">
+            <h2>Contact Me<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></h2>
+            <p>Feel free to reach out for inquiries or collaborations!</p>
+            <div class="media">
+                <a href="https://www.linkedin.com/in/muhammad-fairuz-atha-862b3520a/" target="_blank">
+                    Linkedin
+                </a>
+                <a href="https://www.instagram.com/fairuzsepupublackjack/?hl=en" target="_blank">Instagram</a>
+            </div>
+        </section>
+    </div>     
+    <script src="main.js"></script>
+</body>
+</html>
